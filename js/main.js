@@ -6,7 +6,7 @@
    Ou aponte para arquivos locais em /img (ex.: "img/familia.jpg").
    ===================================================================== */
 const IMAGES = {
-  hero: "",            // arte principal do topo (ex.: imagem "2 cartões")
+  hero: "/img/hero-cartoes.png", // arte principal do topo (imagem oficial "2 cartões" do site lamicvivamais.com.br)
   familia: "",         // foto grande da faixa de imagens
   clinica: "",         // foto menor 1
   laboratorio: "",     // foto menor 2
@@ -37,7 +37,7 @@ fillPhoto('phMain',IMAGES.familia,'Saúde para toda a família','Espaço para a 
 fillPhoto('phA',IMAGES.clinica,'Consultas e exames','Preencha IMAGES.clinica.');
 fillPhoto('phB',IMAGES.laboratorio,'Rede própria LAMIC','Preencha IMAGES.laboratorio.');
 if(IMAGES.hero){
-  document.querySelector('.art').innerHTML=`<img class="hero-photo" src="${IMAGES.hero}" alt="Cartão LAMIC Viva+">`;
+  document.querySelector('.art').innerHTML=`<img class="hero-photo" style="object-fit:contain;border-radius:0" src="${IMAGES.hero}" alt="Cartão LAMIC Viva+">`;
 }
 document.querySelectorAll('.logo-card').forEach(c=>{
   const n=c.querySelector('.name').textContent.trim(), u=IMAGES.grupo[n];
