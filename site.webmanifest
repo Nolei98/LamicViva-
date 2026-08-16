@@ -1,0 +1,13 @@
+{
+  "name": "LAMIC Viva+",
+  "short_name": "Viva+",
+  "description": "Cartão de descontos em saúde no Cariri: consultas, exames, vacinas e farmácias com até 50% de desconto.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#F4F3EF",
+  "theme_color": "#0E3B1C",
+  "lang": "pt-BR",
+  "icons": [
+    { "src": "/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
